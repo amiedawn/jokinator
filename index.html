@@ -17,10 +17,9 @@
         <figure class="image center">
           <img src="assets/images/dad laughing.jpeg" style="max-width: 300px;" />
         </figure>  
+        <!-- title is-size-3 controls size, background-info makes blue background, center centers text in line -->
+        <!-- has-text-white to change font color -->
         <h1 class="title is-size-3 center hero has-background-info has-text-white" style="max-width: 600px;"> 
-          <!-- title is-size-3 controls size, background-info makes blue background, center centers text in line -->
-          <!-- has-text-white to change font color -->
-          
           Jokinator: Your #1 Source for Dad Jokes
         </h1>
       </div>
@@ -28,34 +27,149 @@
   </section>
   <!-- hero end -->
 
-  <!-- section start -->
+  <!-- joke section start -->
   <section class="section">
     <div class="container">
       <div class="columns">
         <div class="column">
-          <div class="notification is-warning"> <!-- this makes gray box around the joke text -->
-            <h1 class="title is-size-2">Joke #1:</h1>
-            <p class="is-size-3"> <!-- is-size-3 for font-size (#s 1-7) -->
-              "Dad, did you get a haircut?"<br><br>          
-              "No, I got them all cut!"
-            </p>
-          </div>
+          <!-- media allows an icon, notification is-warning makes yellow box around the joke text -->
+          <article class="media notification is-warning"> 
+            <!-- media-left makes the icon to the left of text -->
+            <figure class="media-left"> 
+              <!-- is-large controls horizontal padding of icon, has text-success is color of icon -->
+              <span class="icon is-large has-text-success"> 
+                <!-- fa-2x controls size of icon, fab fa-css-alt is from font awesome -->
+                <i class="fab fa-2x fa-css3-alt"></i> 
+              </span>
+            </figure>
+            <div class="media-content">
+              <div class="content">
+                <h1 class="title is-size-2">Joke #1:</h1>
+                <!-- is-size-3 for font-size (#s 1-7) -->
+                <p class="is-size-3">
+                  "Dad, did you get a haircut?"<br><br>
+                  "No, I got them all cut!"
+                </p>
+              </div>
+            </div>
+          </article>
         </div>
         
         <div class="column">
-          <div class="notification is-primary"> <!-- is-primary changes color of box behind text-->
-            <h1 class="title is-size-4">Joke #2:</h1>
-            <p class="is-size-5">
-              "Why can't a nose be 12 inches long?"<br><br>
-              "Because then it would be a foot."
-          </div>
+          <!-- is-primary changes color of box behind text to teal and font-color to white-->
+          <article class="media notification is-primary"> 
+            <figure class="media-left">
+              <span class="icon is-medium has-text-warning">
+                <i class="fab fa-2x fa-css3-alt"></i>
+              </span>
+            </figure>
+            <div class="media-content">
+               <div class="content">
+                  <h1 class="title is-size-4">Joke #2:</h1>
+                  <p class="is-size-5">
+                    "Why can't a nose be 12 inches long?"<br><br>
+                    "Because then it would be a foot."
+                  </p>  
+                </div>    
+               </div> 
+          </article>      
         </div>
       </div>
     </div>
   </section>
+  <!-- joke section end -->
 
+  <!-- categories section start -->
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <!-- is-one-fourth says how wide the column is (1/4 because there are 4 columns in the row) -->
+        <!-- also use is-multiline if there are 6 columns and you need to wrap to next line -->
+        <div class="column is-one-fourth">
+          <!-- media allows an icon, notification makes gray box around the joke text -->
+          <article class="media notification">
+            <!-- media-left makes the icon to the left of text -->
+            <figure class="media-left">
+              <!-- is-large controls horizontal padding of icon, has text-success is color of icon -->
+              <span class="icon is-large has-text-success">
+                <!-- fa-2x controls size of icon, fab fa-css-alt is from font awesome -->
+                <i class="fab fa-2x fa-css3-alt"></i>
+              </span>
+            </figure>
+            <div class="media-content">
+              <div class="content">
+                <h1 class="title is-size-2">Corny Jokes:</h1>
+                <!-- is-size-3 for font-size (#s 1-7) -->
+                <p class="is-size-3">
+                  These jokes are either worn out and tiresome or overly sentimental — and sometimes both.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+  
+        <div class="column is-one-fourth">
+          <article class="media notification">
+            <figure class="media-left">
+              <span class="icon is-medium has-text-warning">
+                <i class="fab fa-2x fa-css3-alt"></i>
+              </span>
+            </figure>
+            <div class="media-content">
+              <div class="content">
+                <h1 class="title is-size-4">One-Liners:</h1>
+                <p class="is-size-5">
+                  Brief, humorous anecdotes or remarks intended to provoke laughter.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+     
+        <div class="column is-one-fourth">
+          <!-- has-background-white makes it look more cohesive rather than separate cards -->
+          <article class="media notification has-background-white">
+            <figure class="media-left">
+              <!-- remove is-large after icon to remove space around icon-->
+              <span class="icon has-text-success">
+                <!-- fa-lg smaller than fa-2x-->
+                <i class="fab fa-lg fa-css3-alt"></i>
+              </span>
+            </figure>
+            <div class="media-content">
+              <div class="content">
+                <h1 class="title is-size-2">Puns:</h1>
+                <p class="is-size-3">
+                  Comedic phrases that play off of the sounds and double meanings of words.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+  
+        <div class="column is-one-fourth">
+          <article class="media notification has-background-white">
+            <figure class="media-left">
+              <span class="icon has-text-warning">
+                <i class="fab fa-lg fa-css3-alt"></i>
+              </span>
+            </figure>
+            <div class="media-content">
+              <div class="content">
+                <h1 class="title is-size-4">Knock-Knock Jokes:</h1>
+                <!-- subtitle makes the text a bit smaller and removes padding after title -->
+                <p class="subtitle is-size-5">
+                  Audience-participatory joke where the joke-teller delivers a pun involving the name.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- categories section end -->
 
-  <!-- section end -->
 
 
 
