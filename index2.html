@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="assets/css/style2.css" />
   <title>Jokinator Version 2</title>
   
-  <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+  <!-- use for debugging to see layout -->
+  <!-- <link rel="stylesheet" href="./assets/css/debug.css"> -->
   <style>
 
   </style>
@@ -17,9 +18,8 @@
 
 <body>
 
-  <!-- .section -->
+  <!-- Breadcrumb trail start -->
   <!-- is-paddingless removes padding around the top section of the page -->
-
   <section class="section is-paddingless-horizontal">
     <div class="container grid">
       <!-- breadcrumb trail is secondary navigation at top of page -->
@@ -35,7 +35,90 @@
 
     </div>
   </section>
-  <!-- /.section -->
+  <!-- Breadcrumb trail end -->
+
+  <!-- Top section start -->
+  <section class="section is-paddingless-horizontal" style="padding-top: 0;">
+    <div class="container grid">
+      <!-- Media section start -->
+      <!-- "center" centers icon and the text even if they have different heights -->
+      <article class="media center">
+        <figure class="media-left">
+          <figure class="image is-128x128">
+            <img src="./assets/images/dad laughing.jpeg">
+          </figure>
+        </figure>
+        <div class="media-content">
+          <div class="content">
+            <h1 class="title is-size-1 center hero has-text-black" style="max-width: 600px;">
+              Jokinator: Your #1 Source for Dad Jokes
+            </h1>
+            <span> 
+              <time datetime="2018-04-20">Apr 20</time>
+            </span>
+          </div>
+        </div>
+      </article>    
+      <!-- Media section end -->
+
+      <!-- Title section start-->
+      <!-- section is-passingless-horizontal puts space between the media and title sections -->
+      <div class="section is-paddingless-horizontal">
+        <h1 class="title is-3">
+          Joke of the Day
+        </h1>
+        <h2 class="subtitle is-5">
+          Which is Your Favorite?
+        </h2>
+      </div>
+      <!-- Title section end-->
+
+      <!-- 3 columns start-->
+      <!-- grid-xl makes large images, is-variable is-2 makes a gap btwn cards (is-0 has no gap) -->
+      <!-- is-mobile for responsiveness (makes images stay inline instead of stacking) -->
+      <!-- is-marginless removes gap between images and the caption -->
+      <figure class="columns is-mobile grid-xl is-marginless is-variable is-4">
+        <div class="column">
+          <!-- card makes a border around the image -->
+          <div class="image card">
+            <a><img src="./assets/images/joke1.jpg"></a>
+          </div>
+          
+        </div>
+         
+        <div class="column">
+          <div class="image card">
+            <a><img src="./assets/images/joke2.jpg"></a>
+          </div>
+          
+        </div>
+            
+        <div class="column">
+          <div class="image card">
+            <a><img src="./assets/images/joke3.jpg"></a>
+          </div>
+          
+        </div>
+      </figure>
+      <!-- center the caption with class="center in figcaption or " -->
+      <!-- do class="level" in figcaption and small class="level-item" then have passing for following <p> -->
+      <figcaption class="level">
+        <small class="level-item">
+          Check back daily to see new jokes!
+        </small>
+      </figcaption>
+
+      <!-- 3 columns end-->
+
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas magnam accusantium, consequatur cumque reiciendis similique optio provident totam magni itaque aliquam sed assumenda est in quidem quod a neque!</p>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Top section end -->
 
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
   <script src="assets/js/script2.js"></script>

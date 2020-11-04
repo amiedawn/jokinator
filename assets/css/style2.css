@@ -19,3 +19,10 @@
 
 /* to have nav span all 3 columns */
 .grid-xl {grid-column: xl; }
+
+/* center the icon */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
