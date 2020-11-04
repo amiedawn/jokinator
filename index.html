@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +12,23 @@
 
 <body>
   <!-- hero start -->
-  <section class="hero has-background-blue">
+  <section class="hero has-background-black">
     <div class="hero-body">
       <div class="container">
         <figure class="image center">
           <img src="assets/images/dad laughing.jpeg" style="max-width: 300px;" />
-        </figure>  
-        <!-- title is-size-3 controls size, background-info makes blue background, center centers text in line -->
-        <!-- has-text-white to change font color -->
-        <h1 class="title is-size-3 center hero has-background-info has-text-white" style="max-width: 600px;"> 
-          Jokinator: Your #1 Source for Dad Jokes
-        </h1>
+        </figure>
+        <!-- center the title element horizontally -->
+        <div class="columns is-centered">
+          <!-- have title not be covered partially by the image -->
+          <div class="column is-half">
+            <!-- title is-size-3 controls size, background-info makes blue background, center centers text in line -->
+            <!-- has-text-white to change font color -->
+            <h1 class="title is-size-3 center hero has-background-black has-text-white" style="max-width: 600px;">
+              Jokinator: Your #1 Source for Dad Jokes
+            </h1>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -33,13 +40,13 @@
       <div class="columns">
         <div class="column">
           <!-- media allows an icon, notification is-warning makes yellow box around the joke text -->
-          <article class="media notification is-warning"> 
+          <article class="media notification is-warning">
             <!-- media-left makes the icon to the left of text -->
-            <figure class="media-left"> 
+            <figure class="media-left">
               <!-- is-large controls horizontal padding of icon, has text-success is color of icon -->
-              <span class="icon is-large has-text-success"> 
+              <span class="icon is-large has-text-success">
                 <!-- fa-2x controls size of icon, fab fa-css-alt is from font awesome -->
-                <i class="fab fa-2x fa-css3-alt"></i> 
+                <i class="fab fa-2x fa-css3-alt"></i>
               </span>
             </figure>
             <div class="media-content">
@@ -54,25 +61,25 @@
             </div>
           </article>
         </div>
-        
+
         <div class="column">
           <!-- is-primary changes color of box behind text to teal and font-color to white-->
-          <article class="media notification is-primary"> 
+          <article class="media notification is-primary">
             <figure class="media-left">
               <span class="icon is-medium has-text-warning">
                 <i class="fab fa-2x fa-css3-alt"></i>
               </span>
             </figure>
             <div class="media-content">
-               <div class="content">
-                  <h1 class="title is-size-4">Joke #2:</h1>
-                  <p class="is-size-5">
-                    "Why can't a nose be 12 inches long?"<br><br>
-                    "Because then it would be a foot."
-                  </p>  
-                </div>    
-               </div> 
-          </article>      
+              <div class="content">
+                <h1 class="title is-size-4">Joke #2:</h1>
+                <p class="is-size-5">
+                  "Why can't a nose be 12 inches long?"<br><br>
+                  "Because then it would be a foot."
+                </p>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </div>
@@ -83,6 +90,7 @@
   <section class="section">
     <div class="container">
       <div class="columns">
+        <!-- CATEGORY COLUMN #1 -->
         <!-- is-one-fourth says how wide the column is (1/4 because there are 4 columns in the row) -->
         <!-- also use is-multiline if there are 6 columns and you need to wrap to next line -->
         <div class="column is-one-fourth">
@@ -107,7 +115,8 @@
             </div>
           </article>
         </div>
-  
+
+        <!-- CATEGORY COLUMN #2-->
         <div class="column is-one-fourth">
           <article class="media notification">
             <figure class="media-left">
@@ -125,7 +134,8 @@
             </div>
           </article>
         </div>
-     
+
+        <!-- CATEGORY COLUMN #3 -->
         <div class="column is-one-fourth">
           <!-- has-background-white makes it look more cohesive rather than separate cards -->
           <article class="media notification has-background-white">
@@ -146,7 +156,8 @@
             </div>
           </article>
         </div>
-  
+
+        <!-- CATEGORY COLUMN #4 -->
         <div class="column is-one-fourth">
           <article class="media notification has-background-white">
             <figure class="media-left">
@@ -169,9 +180,6 @@
     </div>
   </section>
   <!-- categories section end -->
-
-
-
 
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <script src="assets/js/script.js"></script>
