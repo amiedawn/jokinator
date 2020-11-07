@@ -6,6 +6,7 @@
   background: url(../images/emoticons.jpg) center / cover;
 }
 
+
 .grid {
   display: grid;
   /* 3 columns, with the 624px making the center column much wider, minmax makes responsive */
