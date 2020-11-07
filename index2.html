@@ -17,20 +17,22 @@
 </head>
 
 <body>
+  <!-- Background image -->
+  <section class="cover-img is-fullheight">
 
   <!-- Breadcrumb trail start -->
   <!-- is-paddingless removes padding around the top section of the page -->
-  <section class="section is-paddingless-horizontal">
-    <div class="container grid">
+   <section class="section is-paddingless-horizontal">
+    <div class="container grid"> 
       <!-- breadcrumb trail is secondary navigation at top of page -->
-      <nav class="breadcrumb" aria-label="breadcrumbs">
+      <!-- <nav class="breadcrumb" aria-label="breadcrumbs">
         <ul>
           <li><a href="#">
               Home</a></li>
           <li class="is-active"><a href="#" aria-current="page">
               Joke of the Day</a></li>
         </ul>
-      </nav>
+      </nav> -->
 
 
     </div>
@@ -45,7 +47,7 @@
       <article class="media center">
         <figure class="media-left">
           <figure class="image is-128x128">
-            <img src="./assets/images/dad laughing.jpeg">
+            <img src="./assets/images/nachosmile.png">
           </figure>
         </figure>
         <div class="media-content">
@@ -54,7 +56,7 @@
               Jokinator: Your #1 Source for Dad Jokes
             </h1>
             <span> 
-              <time datetime="2018-04-20">Apr 20</time>
+              <time datetime="2018-04-20" id=currentDay>Apr 20</time>
             </span>
           </div>
         </div>
@@ -75,15 +77,15 @@
 
       <!-- 3 columns start-->
       <!-- grid-xl makes large images, is-variable is-2 makes a gap btwn cards (is-0 has no gap) -->
-      <!-- is-mobile for responsiveness (makes images stay inline instead of stacking) -->
-      <!-- is-marginless removes gap between images and the caption -->
-      <figure class="columns is-mobile grid-xl is-marginless is-variable is-4">
+      <!-- is-mobile for responsiveness (makes images stay inline instead of stacking) - removed -->
+      <!-- is-marginless removes gap between images and the caption -removed -->
+      <figure class="columns grid-xl is-variable is-4">
         <div class="column">
           <!-- card makes a border around the image -->
           <div class="image card notification is-info">
             <h4 class="title is-4 center">Joke #1</h3>
-            <a class="button is-primary center">Get Joke</a>
-            <a><img src="./assets/images/joke1.jpg"></a>
+            <a class="button is-primary center" id=btn1>Click to Get Joke</a>
+          <!--<a><img src="./assets/images/joke1.jpg"></a> -->
             <textarea class="textarea" readonly></textarea>
 
           </div>
@@ -91,21 +93,22 @@
         </div>
          
         <div class="column">
-          <div class="image card">
+          <div class="image card notification is-info">
             <h4 class="title is-4 center">Joke #2</h3>
-            <a class="button is-primary center">Get Joke</a>
-            <a><img src="./assets/images/joke2.jpg"></a>
-            <textarea class="textarea" readonly></textarea>
+              <a class="button is-primary center" id=btn2>Click to Get Joke</a>
+              <!--<a><img src="./assets/images/joke1.jpg"></a> -->
+              <textarea class="textarea" readonly></textarea>
           </div>
           
         </div>
             
         <div class="column">
           <div class="image card">
-            <h4 class="title is-4 center">Joke #3</h3>
-            <a class="button is-primary center">Get Joke</a>
-            <a><img src="./assets/images/joke3.jpg"></a>
-            <textarea class="textarea" readonly></textarea>
+            <div class="image card notification is-info">
+              <h4 class="title is-4 center">Joke #3</h3>
+                <a class="button is-primary center" id=btn3>Click to Get Joke</a>
+                <!--<a><img src="./assets/images/joke1.jpg"></a> -->
+                <textarea class="textarea" readonly></textarea>
           </div>
           
         </div>
@@ -113,9 +116,9 @@
       <!-- center the caption with class="center in figcaption or " -->
       <!-- do class="level" in figcaption and small class="level-item" then have passing for following <p> -->
       <figcaption class="level">
-        <small class="level-item">
-          Check back soon to see new jokes!
-        </small>
+        <strong class="level-item">
+         * Check back soon to see new jokes! *
+        </strong>
       </figcaption>
 
       <!-- 3 columns end-->
@@ -124,7 +127,7 @@
       <!-- Main blog section start -->
       <!-- if class="content is-medium" or is-large, it changes font -->
       <!-- notification is-info adds blue background color -->
-      <div class="content notification is-info">
+   <!--   <<div class="content notification is-info">
         <h1>Hello World</h1>
         <p>Lorem ipsum<sup><a>[1]</a></sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend
           gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio,
@@ -170,9 +173,9 @@
           malesuada nulla. Nulla facilisi. Nullam ac erat ante.</p>
         <h4>Fourth level</h4>
         <p>Nulla efficitur eleifend nisi, sit amet bibendum sapien fringilla ac. Mauris euismod metus a tellus laoreet, at
-          elementum ex efficitur.</p>
+          elementum ex efficitur.</p> -->
         <!-- anything inside <pre> needs to hug the left wall with no space (inside code block) -->
-        <pre>
+       <!-- <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -241,7 +244,7 @@
 
 
 
-      </div>
+      </div>> -->
       <!-- Main blog section end -->
     </div>
   </section>
