@@ -6,14 +6,13 @@
   background: url(../images/emoticons.jpg) center / cover;
 }
 
-
 .grid {
   display: grid;
   /* 3 columns, with the 624px making the center column much wider, minmax makes responsive */
   /* [xl-start] and [xl-end] make the images span all 3 columns */
   /* extra 1.5rem (abt 24px) columns are gutters for the left and right content columns */
-  grid-template-columns: 
-    [xl-start] 1fr 1.5rem [md-start] minmax(0, 624px) [md-end] 1.5rem 1fr [xl-end];
+  grid-template-columns: [xl-start] 1fr 1.5rem [md-start] minmax(0, 624px) [md-end] 1.5rem 1fr [xl-end];
+   
 }
 
 /* main content starts at column 2 and goes 3 wide */
