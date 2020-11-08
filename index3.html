@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+  <link rel="stylesheet" href="assets/css/style3.css" />
+  <link rel="stylesheet" href="assets/css/helpers.css" />
+  <!-- use this for grid at bottom of page -->
+  <link rel="stylesheet" href="styles/grid.css">
+  <title>Jokinator 3</title>
+
+  <!-- use for debugging to see layout, this will override the background image  -->
+
+  <!-- <link rel="stylesheet" href="assets/css/debug.css"> -->
+</head>
+
+<body>
+
+<!-- Hero start -->
+<!-- is-fullheight has image take whole screen -->
+<section class="hero is-fullheight">
+ 
+  <!-- Nav bar start -->
+  <div class="hero-head">
+      <!-- is-mobile means columns won't stack on mobile -->
+      <!-- heading makes all caps -->
+      <div class="columns is-mobile is-marginless heading has-text-weight-bold
+      has-background-white">
+        <!-- left, center, or right makes <p> items inline -->
+        <div class="column left">
+          <figure class="image is-64x64">
+            <img src="./assets/images/dad laughing.jpeg">
+          </figure>
+          <p class="navbar-item">Jokinator</p>
+        </div>
+        <div class="column left desktop">
+          <!-- navbar-item spaces out words in menu items -->
+          <p class="navbar-item has-text-black">Joke of the Day</p>
+          <p class="navbar-item has-text-black">Top 10 Most Popular Jokes</p>
+          <p class="navbar-item has-text-black">Submit Your Favorite Dad Joke</p>
+          <p class="navbar-item has-text-black">Message Board</p>
+          <p class="navbar-item has-text-black">Text-to-Voice</p>
+        </div>
+        <div class="column right">
+          <p class="navbar-item has-text-black desktop">One-Liners</p>
+          <p class="navbar-item has-text-black desktop">Puns</p>
+          <p class="navbar-item has-text-black desktop">Knock-Knock Jokes</p>
+          <figure class="navbar-item image has-text-black">
+            <!-- font awesome for hamburger -->
+            <i class="fas fa-bars"></i>
+          </figure>
+
+        </div>
+      </div>
+  </div>
+  <!-- Nav bar end -->
+
+  <!-- Hero body start -->
+  <header class="hero-body">
+    <!-- is-overlay puts headers over the image -->
+    <div class="is-overlay has-text-centered single-spaced" style="top: 282px;">
+      <h1 class="title is-1 has-background-white">Jokinator</h1>
+      <h2 class="subtitle is-3 has-background-white has-text-weight-light">Your #1 Source for Dad Jokes</h2>
+    </div>
+  </header>
+  <!-- Hero body end -->
+
+  <!-- Hero-footer start -->
+  <main class="hero-foot center" style="padding: 2rem;">
+    <div id="grid" style="width: 768px;">
+      <div id="a" class="center-column">
+        <p class="has-text-centered has-text-white">
+          ​The quickest car in the world, with record-setting<br>
+          acceleration, range and performance.
+        </p>
+      </div>
+      <div id="b" class="center-column">
+        <p class="title has-text-white">
+          <i class="fas fa-tachometer-alt has-text-grey-light" style="width: 0.75em; height: 0.75em;"></i>
+          1.9<span class="is-size-5">s</span>
+        </p>
+        <p class="subtitle has-text-white is-7">0-60 mph</p>
+      </div>
+      <div id="c" class="center-column" style="border-left: 1px solid gray;">
+        <p class="title has-text-white"><span class="is-size-5">+</span>250<span class="is-size-5">mph</span></p>
+        <p class="subtitle is-7 has-text-white">Top Speed</p>
+      </div>
+      <div id="d" class="center-column" style="border-left: 1px solid gray;">
+        <p class="title has-text-white">620</span><span class="is-size-5">mi</span></p>
+        <p class="subtitle is-7 has-text-white">Mile Range</p>
+      </div>
+      <div id="e" class="center-column">
+        <a class="button is-danger is-inverted is-rounded is-outlined has-text-weight-bold"
+          style="width: 100%; border: 0.15em solid white;">
+          Reserve Now
+        </a>
+      </div>
+    </div>
+  </main>
+  <!-- Hero-footer end -->
+</section>
+<!-- Hero end-->
+
+
+
+
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <script src="assets/js/script3.js"></script>
+</body>
+
+</html>
