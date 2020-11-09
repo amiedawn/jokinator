@@ -1,3 +1,10 @@
+// display current day in header
+var today = moment().format("dddd, MMMM Do");
+var $headerDate = $("#currentDay");
+
+$headerDate.text(today);
+console.log(today);
+
 // Modal open and close
 $(".modal-button").click(function () {
   var target = $(this).data("target");
@@ -39,7 +46,7 @@ twttr.widgets.createTweet(
 );
 
 // execute code after a widget has been inserted onto the page by passing a callback to the resulting promise's then function
-twttr.widgets.createTweet(...)
-  .then(function (el) {
-    console.log('Tweet added.');
-  });
+// twttr.widgets.createTweet(...)
+//   .then(function (el) {
+//     console.log('Tweet added.');
+//   });
