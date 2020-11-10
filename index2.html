@@ -31,6 +31,7 @@
               Home</a></li>
           <li class="is-active"><a href="#" aria-current="page">
               Joke of the Day</a></li>
+          <li> <input type = "button" onclick="joke()" value = "Joke Me"></input></li>
         </ul>
       </nav> -->
 
@@ -120,8 +121,10 @@
                 Jokinator: Your #1 Source for Dad Jokes
               </h1>
               <span>
-                <time datetime="2018-04-20" id=currentDay>Apr 20</time>
+                <!--<time datetime="2018-04-20" id=currentDay></time>-->
+                <p id="currentDay" class="date"></p>
               </span>
+              
               <p class="twitter-follow" style="padding-top: 10px;">
                 <a href="https://twitter.com/jokinator3?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large"
                   data-show-count="false">Follow @jokinator3</a>
@@ -157,10 +160,10 @@
           <div class="column">
             <!-- card makes a border around the image -->
             <div class="image card notification is-info">
-              <h4 class="title is-4 center">Joke #1</h3>
+              <h4 class="title is-4 center">Random Dad Jokes</h3>
                 <a class="button is-primary center" id=btn1>Click to Get Joke</a>
                 <!--<a><img src="./assets/images/joke1.jpg"></a> -->
-                <textarea class="textarea" readonly></textarea>
+                <textarea class="textarea" id="box-one-joke" readonly></textarea>
                 <a href="https://twitter.com/intent/tweet?button_hashtag=tweet&ref_src=twsrc%5Etfw" class="twitter-hashtag-button"
                   data-show-count="false" data-size="large">Tweet #tweet</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -171,10 +174,10 @@
 
           <div class="column">
             <div class="image card notification is-info">
-              <h4 class="title is-4 center">Joke #2</h3>
+              <h4 class="title is-4 center">Joke of the Day</h3>
                 <a class="button is-primary center" id=btn2>Click to Get Joke</a>
                 <!--<a><img src="./assets/images/joke1.jpg"></a> -->
-                <textarea class="textarea" readonly></textarea>
+                <textarea class="textarea" id="box-two-joke" readonly></textarea>
                 <a href="https://twitter.com/intent/tweet?button_hashtag=tweet&ref_src=twsrc%5Etfw" class="twitter-hashtag-button"
                   data-show-count="false" data-size="large">Tweet #tweet</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -183,18 +186,18 @@
           </div>
 
           <div class="column">
-            <div class="image card">
+            <!-- <div class="image card">
               <div class="image card notification is-info">
                 <h4 class="title is-4 center">Joke #3</h3>
-                  <a class="button is-primary center" id=btn3>Click to Get Joke</a>
+                  <a class="button is-primary center" id=btn3>Click to Get Joke</a> -->
                   <!--<a><img src="./assets/images/joke1.jpg"></a> -->
-                  <textarea class="textarea" readonly></textarea>
+                  <!--<textarea class="textarea" readonly></textarea>
                   <a href="https://twitter.com/intent/tweet?button_hashtag=tweet&ref_src=twsrc%5Etfw" class="twitter-hashtag-button"
                     data-show-count="false" data-size="large">Tweet #tweet</a>
                   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
               </div>
 
-            </div>
+            </div> -->
         </figure>
         <!-- center the caption with class="center in figcaption or " -->
         <!-- do class="level" in figcaption and small class="level-item" then have passing for following <p> -->
@@ -223,9 +226,16 @@
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <!-- for Twitter -->
     <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
     <script src="assets/js/script2.js"></script>
+    <script src="assets/js/dadjokes.js"></script>
+    <script src="assets/js/jokeoftheday.js"></script>
+
+   
+    
+
 </body>
 
 </html>
