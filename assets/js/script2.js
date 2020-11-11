@@ -1,4 +1,4 @@
-import * as blah from 'StorageHandler';
+// console.log(getLocalStorage('hi'));
 // Modal open and close
 $(".modal-button").click(function () {
   var target = $(this).data("target");
@@ -43,4 +43,4 @@ twttr.widgets.createTweet(
 twttr.widgets.createTweet(...)
   .then(function (el) {
     console.log('Tweet added.');
-  });
+});
