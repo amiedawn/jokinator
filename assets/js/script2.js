@@ -1,3 +1,4 @@
+import * as blah from 'StorageHandler';
 // Modal open and close
 $(".modal-button").click(function () {
   var target = $(this).data("target");
