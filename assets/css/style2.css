@@ -34,9 +34,9 @@
 
 .level-item {
   font-size: 30px;
+  padding-top: 20px;
   margin-top: 20px;
 }
-
 
 
 @media (max-width: 672px) {
