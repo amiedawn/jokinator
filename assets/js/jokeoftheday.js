@@ -8,28 +8,30 @@ const jokeClickHanlder = (event) => {
 
   fetchJoke();
 
-  //console.log(event);
-
 }
 
 const displayJoke = (data) => {
 
   let joke = document.getElementById('box-two-joke');
 
-  let setup = data.setup;
-  let delivery = data.delivery;
+  console.log(data);
 
-  joke.textContent = setup + '\n' + '\n' + delivery;
+  // If this is a knock knock joke it is redundant to have the title. keeping for future development reasons.
+  // let setup = data.contents.jokes[0].joke.title;
+  let delivery = data.contents.jokes[0].joke.text;
 
+  joke.textContent = delivery;
+  setJoke('jokeoftheday', data.contents.jokes[0]);
+  
 }
 
 const fetchJoke = () => {
 
-  fetch("https://jokeapi-v2.p.rapidapi.com/joke/Programming?contains=C%2523&format=json&blacklistFlags=nsfw%2Cracist&idRange=0-150&type=single%2Ctwopart", {
+  fetch("https://jokes.p.rapidapi.com/jod?category=knock-knock", {
     "method": "GET",
     "headers": {
-      "x-rapidapi-key": "71e5f35824msh98273649261f1ebp1485e6jsn5981b60dca9f",
-      "x-rapidapi-host": "jokeapi-v2.p.rapidapi.com"
+      "x-rapidapi-key": getStore().jokeoftheday.api_key,
+      "x-rapidapi-host": "jokes.p.rapidapi.com",
     }
   })
     .then((res) => res.json())
