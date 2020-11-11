@@ -3,8 +3,9 @@
 
 .cover-img {
   /* cover makes the image fit the screen */
-  background: url(../images/emoticons.jpg) center / cover;
-}
+  background: url('https://media.giphy.com/media/gj0QdZ9FgqGhOBNlFS/giphy.gif') center / cover;
+  /*  change height and width etc. here
+ }
 
 .grid {
   display: grid;
