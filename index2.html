@@ -7,231 +7,131 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
   <link rel="stylesheet" href="assets/css/style2.css" />
-  <title>Jokinator Version 2</title>
+  <title>Jokinator</title>
 
   <!-- use for debugging to see layout -->
-  <!-- <link rel="stylesheet" href="./assets/css/debug.css"> -->
-  <style>
+ <!--  <link rel="stylesheet" href="./assets/css/debug.css"> -->
 
-  </style>
 </head>
 
 <body>
   <!-- Background image -->
   <section class="cover-img is-fullheight">
-
-  <!-- Breadcrumb trail start -->
-  <!-- is-paddingless removes padding around the top section of the page -->
-   <section class="section is-paddingless-horizontal">
-    <div class="container grid"> 
-      <!-- breadcrumb trail is secondary navigation at top of page -->
-      <!-- <nav class="breadcrumb" aria-label="breadcrumbs">
-        <ul>
-          <li><a href="#">
-              Home</a></li>
-          <li class="is-active"><a href="#" aria-current="page">
-              Joke of the Day</a></li>
-          <li> <input type = "button" onclick="joke()" value = "Joke Me"></input></li>
-        </ul>
-      </nav> -->
-
-      </div>
-    </section>
-    <!-- Breadcrumb trail end -->
-
-    <!-- Modal Twitter start -->
-
-    <section class="section">
-      <div class="container">
-        <span class="title">
-         <!-- Twitter Modal-->
-        </span>
-        <br>
-        <br>
-    
-        
-        <div id="modal" class="modal">
-          <div class="modal-background"></div>
-          <div class="modal-content">
-            <div class="box">
-              <article class="media">
-                <div class="media-left">
-                  <figure class="image is-64x64">
-                    <img src="./assets/images/nachosmile.jpg" alt="Image">
-                  </figure>
-                </div>
-                <div class="media-content">
-                  <div class="content">
-                    <p>
-                      <strong>Jokinator</strong>
-                      <small>@Jokinator3</small>
-                      <!-- <small>31m</small>
-                      <br>
-                      This is simple text. This is simple text.
-                      This is simple text. This is simple text. -->
-                    </p>
-                  </div>
-                  <nav class="level">
-                    <div class="level-left">
-                      <a class="level-item">
-                        <a href="https://twitter.com/jokinator3?ref_src=twsrc%5Etfw" class="twitter-follow-button"
-                          data-show-count="false">Follow @jokinator3</a>
-                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                        
-                        <!-- <a class="twitter-share-button" href="https://twitter.com/intent/tweet"> 
-                       
-                          Tweet
-                        </a> -->
-                        <!-- <span class="icon is-small">
-                          <i class="fa fa-reply"></i>
-                        </span> -->
-                      </a>
-                      <!-- <a class="level-item">
-                        <span class="icon is-small">
-                          <i class="fa fa-retweet"></i>
-                        </span>
-                      </a> -->
-                    </div>
-                  </nav>
-    
-                </div>
-              </article>
-            </div>
-          </div>
-          <button class="modal-close is-large" aria-label="close"></button>
-        </div>
-      </div>
-    </section>
-    <!-- Modal Twitter end -->
-
-    <!-- Top section start -->
-    <section class="section is-paddingless-horizontal" style="padding-top: 0;">
+    <section class="section is-paddingless-horizontal" style="padding-top: 40px;">
       <div class="container grid">
-        <!-- Media section start -->
+        
+        <!-- Top section start -->
         <!-- "center" centers icon and the text even if they have different heights, removed from media class -->
         <article class="media">
           <figure class="media-left">
-            <figure class="image is-128x128">
+            <figure class="image is-200x200"></figure>
               <img src="./assets/images/nachosmile.jpg">
             </figure>
           </figure>
           <div class="media-content">
             <div class="content">
               <h1 class="title is-size-2 center hero has-text-black" style="max-width: 800px;">
-                Jokinator: Your #1 Source for Dad Jokes
+                Jokinator: Your #1 Source for Clean Jokes
               </h1>
+              <!-- Current Date display -->
               <span>
-                <!--<time datetime="2018-04-20" id=currentDay></time>-->
                 <p id="currentDay" class="date"></p>
               </span>
               
+              <!-- Follow @Jokinator3 on Twitter -->
               <p class="twitter-follow" style="padding-top: 10px;">
                 <a href="https://twitter.com/jokinator3?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large"
                   data-show-count="false">Follow @jokinator3</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                
-                <!--<a class="button is-primary modal-button" style="margin-top: 10px;" data-target="#modal">Tweet Our Jokes</a> -->
-  <!-- use this line if you want button and modal to follow on Twitter -->              
-  <!-- <a class="button is-primary modal-button" style="margin-top: 10px;" data-target="#modal">Follow us on Twitter</a> -->
               </p>
             </div>
           </div>
         </article>
-        <!-- Media section end -->
-
+        <!-- Top section end -->
       
-        <!-- Title section start-->
+        <!-- Subtitle section start-->
         <!-- section is-passingless-horizontal puts space between the media and title sections -->
         <div class="section is-paddingless-horizontal">
-          <h1 class="title is-2 center">
+          <h1 class="title is-4 center">
             Featured Jokes
           </h1>
           <h2 class="subtitle is-5 center">
             Which is Your Favorite?
           </h2>
         </div>
-        <!-- Title section end-->
+        <!-- Subitle section end-->
 
-        <!-- 3 columns start-->
+        <!-- 2 Joke Boxes start-->
         <!-- grid-xl makes large images, is-variable is-2 makes a gap btwn cards (is-0 has no gap) -->
         <!-- is-mobile for responsiveness (makes images stay inline instead of stacking) - removed -->
         <!-- is-marginless removes gap between images and the caption -removed -->
-        <figure class="columns grid-xl is-variable is-4">
+        <figure class="columns grid-xl is-variable is-3">
+          <!-- Box 1 -->
           <div class="column">
             <!-- card makes a border around the image -->
             <div class="image card notification is-info">
-              <h4 class="title is-4 center">Random Dad Jokes</h3>
+              <h4 class="title is-4 center">Random Dad Jokes</h4>
                 <a class="button is-primary center" id=btn1>Click to Get Joke</a>
-                <!--<a><img src="./assets/images/joke1.jpg"></a> -->
                 <textarea class="textarea" id="box-one-joke" readonly></textarea>
                 <a href="https://twitter.com/intent/tweet?button_hashtag=tweet&ref_src=twsrc%5Etfw" class="twitter-hashtag-button"
                   data-show-count="false" data-size="large">Tweet #tweet</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
             </div>
-
           </div>
 
+          <!-- Box 2 -->
           <div class="column">
             <div class="image card notification is-info">
-              <h4 class="title is-4 center">Joke of the Day</h3>
+              <h4 class="title is-4 center">Joke of the Day</h4>
                 <a class="button is-primary center" id=btn2>Click to Get Joke</a>
-                <!--<a><img src="./assets/images/joke1.jpg"></a> -->
                 <textarea class="textarea" id="box-two-joke" readonly></textarea>
                 <a href="https://twitter.com/intent/tweet?button_hashtag=tweet&ref_src=twsrc%5Etfw" class="twitter-hashtag-button"
                   data-show-count="false" data-size="large">Tweet #tweet</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
-
           </div>
-
-          <div class="column">
-            <!-- <div class="image card">
-              <div class="image card notification is-info">
-                <h4 class="title is-4 center">Joke #3</h3>
-                  <a class="button is-primary center" id=btn3>Click to Get Joke</a> -->
-                  <!--<a><img src="./assets/images/joke1.jpg"></a> -->
-                  <!--<textarea class="textarea" readonly></textarea>
-                  <a href="https://twitter.com/intent/tweet?button_hashtag=tweet&ref_src=twsrc%5Etfw" class="twitter-hashtag-button"
-                    data-show-count="false" data-size="large">Tweet #tweet</a>
-                  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-              </div>
-
-            </div> -->
         </figure>
-        <!-- center the caption with class="center in figcaption or " -->
-        <!-- do class="level" in figcaption and small class="level-item" then have passing for following <p> -->
-        <figcaption class="level">
-          <strong class="level-item">
-            * Check back soon to see new jokes! *
-          </strong>
-        </figcaption>
+        <!-- 2 Joke Boxes end-->
 
-        <!-- 3 columns end-->
-        <!-- Top section end -->
-
-        <!-- Twitter section -->
-        <div id="container"></div>
-    
-      
+        <!-- Button and modal for user to supply their own joke -->
+        <a class="button is-primary is-medium modal-button center" style="margin-top: 10px;" data-target="#modal">
+          Submit Your Own Joke to Our Twitter Page
+        </a>
       </div>
     </section>
-    
+  
+  <!-- Modal Supply Joke start -->
+  <section class="section">
+    <div class="container">
+      <div id="modal" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <div class="box notification is-info">
+            <h3 class="modal-title has-text-warning">Would you like to submit a clean joke to our Twitter page
+              @Jokinator3?</h3>
+            <h3 class="modal-title has-text-warning">Enter your joke below and click Submit: </h3>
+            <textarea class="textarea" id="supply-joke" style="margin-top: 20px;"></textarea>
+            <div class="modal-buttons">
+              <a class="button is-primary" id=btnSupply>Submit Your Joke</a>
+              &nbsp; 
+              <a class="button is-primary" id=btnClose>Return to Main Page</a>
+            </div>  
+          </div>
+        </div>
+        <button class="modal-close is-large" id=btnClose></button>
+      </div>
+    </div>
+  </section>
+  <!-- Modal Supply Joke end -->
 
-
-
-
-
-
-
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <!-- for Twitter -->
-    <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
-    <script src="assets/js/script2.js"></script>
-    <script src="assets/js/dadjokes.js"></script>
-    <script src="assets/js/jokeoftheday.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <!-- for Twitter -->
+  <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
+  <script src="assets/js/script2.js"></script>
+  <script src="assets/js/dadjokes.js"></script>
+  <script src="assets/js/jokeoftheday.js"></script>
 
    
     
