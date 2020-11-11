@@ -20,6 +20,8 @@ const displayJokePunch = (data) => {
 
   jokePunch.textContent = setup + '\n' + '\n' + punchline;
 
+  setJoke('dadjokes', data.body[0]);
+
 }
 
 // fetch apis
@@ -28,7 +30,7 @@ const fetchDadJoke = () => {
   fetch("https://dad-jokes.p.rapidapi.com/random/joke", {
     "method": "GET",
     "headers": {
-      "x-rapidapi-key": "71e5f35824msh98273649261f1ebp1485e6jsn5981b60dca9f",
+      "x-rapidapi-key": getStore().dadjokes.api_key,
       "x-rapidapi-host": "dad-jokes.p.rapidapi.com"
     }
   })
