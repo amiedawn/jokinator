@@ -10,7 +10,7 @@
   <title>Jokinator</title>
 
   <!-- use for debugging to see layout -->
- <!--  <link rel="stylesheet" href="./assets/css/debug.css"> -->
+  <!--  <link rel="stylesheet" href="./assets/css/debug.css"> -->
 
 </head>
 
@@ -19,14 +19,14 @@
   <section class="cover-img is-fullheight">
     <section class="section is-paddingless-horizontal" style="padding-top: 40px;">
       <div class="container grid">
-        
+
         <!-- Top section start -->
         <!-- "center" centers icon and the text even if they have different heights, removed from media class -->
         <article class="media">
           <figure class="media-left">
             <figure class="image is-200x200"></figure>
-              <img src="./assets/images/nachosmile.jpg">
-            </figure>
+            <img src="./assets/images/nachosmile.jpg">
+          </figure>
           </figure>
           <div class="media-content">
             <div class="content">
@@ -37,18 +37,18 @@
               <span>
                 <p id="currentDay" class="date"></p>
               </span>
-              
+
               <!-- Follow @Jokinator3 on Twitter -->
               <p class="twitter-follow" style="padding-top: 10px;">
-                <a href="https://twitter.com/jokinator3?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large"
-                  data-show-count="false">Follow @jokinator3</a>
+                <a href="https://twitter.com/jokinator3?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+                  data-size="large" data-show-count="false">Follow @jokinator3</a>
                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
               </p>
             </div>
           </div>
         </article>
         <!-- Top section end -->
-      
+
         <!-- Subtitle section start-->
         <!-- section is-passingless-horizontal puts space between the media and title sections -->
         <div class="section is-paddingless-horizontal">
@@ -71,11 +71,11 @@
             <!-- card makes a border around the image -->
             <div class="image card notification is-info">
               <h4 class="title is-4 center">Random Dad Jokes</h4>
-                <a class="button is-primary center" id=btn1>Click to Get Joke</a>
-                <textarea class="textarea" id="box-one-joke" readonly></textarea>
-                <a href="https://twitter.com/intent/tweet?button_hashtag=tweet&ref_src=twsrc%5Etfw" class="twitter-hashtag-button"
-                  data-show-count="false" data-size="large">Tweet #tweet</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <a class="button is-primary center" id=btn1>Click to Get Joke</a>
+              <textarea class="textarea" id="box-one-joke" readonly></textarea>
+              <a href="https://twitter.com/intent/tweet?button_hashtag=tweet&ref_src=twsrc%5Etfw"
+                class="twitter-hashtag-button" data-show-count="false" data-size="large">Tweet #tweet</a>
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
           </div>
 
@@ -83,11 +83,11 @@
           <div class="column">
             <div class="image card notification is-info">
               <h4 class="title is-4 center">Joke of the Day</h4>
-                <a class="button is-primary center" id=btn2>Click to Get Joke</a>
-                <textarea class="textarea" id="box-two-joke" readonly></textarea>
-                <a href="https://twitter.com/intent/tweet?button_hashtag=tweet&ref_src=twsrc%5Etfw" class="twitter-hashtag-button"
-                  data-show-count="false" data-size="large">Tweet #tweet</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <a class="button is-primary center" id=btn2>Click to Get Joke</a>
+              <textarea class="textarea" id="box-two-joke" readonly></textarea>
+              <a href="https://twitter.com/intent/tweet?button_hashtag=tweet&ref_src=twsrc%5Etfw"
+                class="twitter-hashtag-button" data-show-count="false" data-size="large">Tweet #tweet</a>
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
           </div>
         </figure>
@@ -99,43 +99,45 @@
         </a>
       </div>
     </section>
-  
-  <!-- Modal Supply Joke start -->
-  <section class="section">
-    <div class="container">
-      <div id="modal" class="modal">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-          <div class="box notification is-info">
-            <h3 class="modal-title has-text-warning">Would you like to submit a clean joke to our Twitter page
-              @Jokinator3?</h3>
-            <h3 class="modal-title has-text-warning">Enter your joke below and click Submit: </h3>
-            <textarea class="textarea" id="supply-joke" style="margin-top: 20px;"></textarea>
-            <div class="modal-buttons">
-              <a class="button is-primary" id=btnSupply>Submit Your Joke</a>
-              &nbsp; 
-              <a class="button is-primary" id=btnClose>Return to Main Page</a>
-            </div>  
+
+    <!-- Modal Supply Joke start -->
+    <section class="section">
+      <div class="container">
+        <div id="modal" class="modal">
+          <div class="modal-background"></div>
+          <div class="modal-content">
+            <div class="box notification is-info">
+              <h3 class="modal-title has-text-warning">Would you like to submit a clean joke to our Twitter page
+                @Jokinator3?</h3>
+              <h3 class="modal-title has-text-warning">Enter your joke below and click Submit: </h3>
+              <textarea class="textarea" id="supply-joke" style="margin-top: 20px;"></textarea>
+              <div class="modal-buttons">
+                <a class="button is-primary" href="https://twitter.com/intent/tweet?text=Hello%20world"
+                  id=btnSupply>Submit
+                  Your Joke</a>
+                &nbsp;
+                <a class="button is-primary" href="index2.html" id=btnClose>Return to Main Page</a>
+              </div>
+            </div>
           </div>
+          <button class="modal-close is-large" id=btnClose></button>
         </div>
-        <button class="modal-close is-large" id=btnClose></button>
       </div>
-    </div>
-  </section>
-  <!-- Modal Supply Joke end -->
+    </section>
+    <!-- Modal Supply Joke end -->
 
-  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  <!-- for Twitter -->
-  <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
-  <script src="assets/js/script2.js"></script>
-  <script src="assets/js/dadjokes.js"></script>
-  <script src="assets/js/jokeoftheday.js"></script>
-  <script src="assets/js/StorageHandler.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!-- for Twitter -->
+    <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
+    <script src="assets/js/script2.js"></script>
+    <script src="assets/js/dadjokes.js"></script>
+    <script src="assets/js/jokeoftheday.js"></script>
+    <script src="assets/js/StorageHandler.js"></script>
 
-   
-    
+
+
 
 </body>
 

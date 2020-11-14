@@ -5,6 +5,8 @@ var $headerDate = $("#currentDay");
 $headerDate.text(today);
 console.log(today);
 
+
+
 // Modal open and close
 $(".modal-button").click(function () {
   var target = $(this).data("target");
