@@ -8,8 +8,6 @@ const dadJokeEventHanlder = (event) => {
 
   fetchDadJoke();
 
-  //console.log(event);
-
 }
 
 const displayJokePunch = (data) => {
@@ -25,6 +23,7 @@ const displayJokePunch = (data) => {
 }
 
 // fetch apis
+let fetchNumberOfTries = 0;
 const fetchDadJoke = () => {
 
   fetch("https://dad-jokes.p.rapidapi.com/random/joke", {
@@ -36,8 +35,13 @@ const fetchDadJoke = () => {
   })
     .then((res) => res.json())
     .then((data) => {
-      displayJokePunch(data);
-      console.log(data);
+      if (getDadJokeFromStore(data._id) && fetchNumberOfTries < 5) {
+        fetchNumberOfTries += 1;
+        fetchDadJoke();
+      } else {
+        fetchNumberOfTries = 0;
+        displayJokePunch(data);
+      }
     })
     .catch(err => {
       console.error(err);
