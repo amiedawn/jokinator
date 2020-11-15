@@ -41,3 +41,10 @@ const setJoke = (jokeSource, jokeObject) => {
         console.error(error);
     }
 }
+
+// since the joke of the day returns the same joke for the day we only create this for the dad joke
+// returns true or false if the id exists in the store.
+const getDadJokeFromStore = (id) => {
+    let dadJokeIds = getStore().dadjokes.jokes.map(dadJoke => dadJoke._id);
+    return dadJokeIds.includes(id);
+}
