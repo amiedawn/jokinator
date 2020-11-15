@@ -3,7 +3,6 @@ var today = moment().format("dddd, MMMM Do");
 var $headerDate = $("#currentDay");
 
 $headerDate.text(today);
-console.log(today);
 
 // Modal open and close
 $(".modal-button").click(function () {
@@ -16,6 +15,12 @@ $(".modal-close").click(function () {
   $("html").removeClass("is-clipped");
   $(this).parent().removeClass("is-active");
 });
+
+// open the modal after 10 seconds
+setTimeout(() => {
+  document.getElementById('modal-button').click();
+
+}, 10000);
 
 // create a Twitter for Websites widget (a Tweet button, Follow button, embedded Tweet or timeline)
 window.twttr = (function (d, s, id) {
