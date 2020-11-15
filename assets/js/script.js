@@ -25,11 +25,21 @@ $(".modal-button").click(function () {
   var target = $(this).data("target");
   $("html").addClass("is-clipped");
   $(target).addClass("is-active");
+  $('.modal').show();
 });
 
 $(".modal-close").click(function () {
   $("html").removeClass("is-clipped");
   $(this).parent().removeClass("is-active");
+  $('.modal').hide();
+});
+
+$('#btnSupply').click(function () {
+  $('.modal').hide();
+});
+
+$('#btnReturn').click(function () {
+  $('.modal').hide();
 });
 
 // open the modal after 10 seconds
