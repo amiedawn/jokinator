@@ -17,12 +17,11 @@ const displayJoke = (data) => {
   console.log(data);
 
   // If this is a knock knock joke it is redundant to have the title. keeping for future development reasons.
-  // let setup = data.contents.jokes[0].joke.title;
   let delivery = data.contents.jokes[0].joke.text;
 
   joke.textContent = delivery;
   setJoke('jokeoftheday', data.contents.jokes[0]);
-  
+
 }
 
 const fetchJoke = () => {
