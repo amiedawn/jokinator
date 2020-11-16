@@ -1,9 +1,0 @@
-.hero {
-  /* cover makes the image fit the screen */
-  background: url(../images/mouth.jpg) center / cover;
-}
-
-/* use these media queries if your image is too large for small screens */
-/* black makes a black background behind image for when it is loading */
-@media (max-width: 1024px) { .hero { background: black url(images/hero-2.jpg) center / cover; } }
-@media (max-width:  768px) { .hero { background: black url(images/hero-3.jpg) center / cover; } }

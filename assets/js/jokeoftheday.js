@@ -14,8 +14,6 @@ const displayJoke = (data) => {
 
   let joke = document.getElementById('box-two-joke');
 
-  console.log(data);
-
   // If this is a knock knock joke it is redundant to have the title. keeping for future development reasons.
   let delivery = data.contents.jokes[0].joke.text;
 
@@ -36,7 +34,6 @@ const fetchJoke = () => {
     .then((res) => res.json())
     .then((data) => {
       displayJoke(data);
-      console.log(data);
     })
     .catch(err => {
       console.error(err);
