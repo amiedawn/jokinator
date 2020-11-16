@@ -7,6 +7,7 @@ const userInputId = document.getElementById('supply-joke');
 
 $headerDate.text(today);
 
+// tweet user input
 const tweetSubmitHandler = (event) => {
 
   event.preventDefault();
@@ -15,12 +16,9 @@ const tweetSubmitHandler = (event) => {
 
   submitTweetId.href = `https://twitter.com/intent/tweet?text=@Jokinator3 ${userInput}`;
 
-  // console.log(userInput);
-  // console.log(event);
-
 }
 
-// Modal open and close
+// Modal open and close and show/hide modal
 $(".modal-button").click(function () {
   var target = $(this).data("target");
   $("html").addClass("is-clipped");
@@ -67,18 +65,3 @@ window.twttr = (function (d, s, id) {
 }(document, "script", "twitter-wjs"));
 
 submitTweetId.addEventListener('click', tweetSubmitHandler);
-
-// // inserts "Tweet ID 20" into a page inside an element with ID of container, returns a promise
-// twttr.widgets.createTweet(
-//   '20',
-//   document.getElementById('container'),
-//   {
-//     theme: 'dark'
-//   }
-// );
-
-// execute code after a widget has been inserted onto the page by passing a callback to the resulting promise's then function
-// twttr.widgets.createTweet(...)
-//   .then(function (el) {
-//     console.log('Tweet added.');
-//   });
