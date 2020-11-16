@@ -7,12 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="./assets/images/laughing-and-pointing-emoticon.jpg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
-  <link rel="stylesheet" href="assets/css/style2.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
   <title>Jokinator</title>
-
-  <!-- use for debugging to see layout -->
-  <!-- <link rel="stylesheet" href="./assets/css/debug.css"> -->
-
 </head>
 
 <body>
@@ -22,7 +18,6 @@
       <div class="container grid">
 
         <!-- Top section start -->
-        <!-- "center" centers icon and the text even if they have different heights, removed from media class -->
         <article class="media">
           <figure class="media-left">
             <figure class="image is-200x200"></figure>
@@ -51,7 +46,6 @@
         <!-- Top section end -->
 
         <!-- Subtitle section start-->
-        <!-- section is-passingless-horizontal puts space between the media and title sections -->
         <div class="section is-paddingless-horizontal">
           <h1 class="title is-4 center">
             Featured Jokes
@@ -63,13 +57,9 @@
         <!-- Subitle section end-->
 
         <!-- 2 Joke Boxes start-->
-        <!-- grid-xl makes large images, is-variable is-2 makes a gap btwn cards (is-0 has no gap) -->
-        <!-- is-mobile for responsiveness (makes images stay inline instead of stacking) - removed -->
-        <!-- is-marginless removes gap between images and the caption -removed -->
         <figure class="columns grid-xl is-variable is-3">
           <!-- Box 1 -->
           <div class="column">
-            <!-- card makes a border around the image -->
             <div class="image card notification is-info">
               <h4 class="title is-4 center">Random Dad Jokes</h4>
               <a class="button is-primary center" id=btn1>Click to Get Joke</a>
